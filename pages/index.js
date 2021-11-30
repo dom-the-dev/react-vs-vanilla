@@ -1,37 +1,39 @@
-import Head from 'next/head'
+import Link from 'next/link'
+import Layout from "../components/Layout";
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import simpleCounter from '../public/simpleCounter.png'
+
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>React VS. Vanilla JS</title>
-        <meta name="description" content="React VS. Vanilla JS Series" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+	return (
+		<div>
+			<Layout title={"Home"} home={true}>
+				<main className={"container my-16 min-h-screen"}>
+					<div className="grid gap-4 grid-col-1 md:grid-cols-3">
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          React VS. Vanilla JS
-        </h1>
+						<Link href="/simple-counter">
+							<a>
+								<div
+									className={"shadow"}>
+									<Image
+										src={simpleCounter}
+										alt="Simple Counter Screenshot"
+										placeholder="blur"
+									/>
 
+									<div className="p-5">
+										<h5 className={"text-center"}>Simple Counter</h5>
+									</div>
+								</div>
+							</a>
+						</Link>
+					</div>
+				</main>
 
+			</Layout>
+			<footer>
 
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
-  )
+			</footer>
+		</div>
+	)
 }
