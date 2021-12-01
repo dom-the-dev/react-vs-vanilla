@@ -13,7 +13,7 @@ const Layout = ({children, title, home}) => {
 			</Head>
 			<Navbar/>
 
-			<div className={"bg-gradient-to-r from-react to-vanilla py-32"}>
+			<div className={"bg-gradient-to-r from-reactBg via-react to-vanilla py-32"}>
 				<header className="container text-center text-white">
 					{home ?
 						<div className={"transform -rotate-3"}>

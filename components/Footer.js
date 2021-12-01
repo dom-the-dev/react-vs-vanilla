@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 const Footer = props => {
 	return (
 		<div className={"container text-center"}>
-				By dom the dev
+			By <a href="https://dom-the-dev.vercel.app/" target={"_blank"} rel={"noreferrer"}>
+			dom the dev
+		</a>
 		</div>
 	);
 };
 
-Footer.propTypes = {
-
-};
+Footer.propTypes = {};
 
 export default Footer;
