@@ -1,8 +1,8 @@
 import React from 'react';
 import Layout from "../components/Layout";
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
-import {coldarkCold} from 'react-syntax-highlighter/dist/esm/styles/prism';
-import {coldarkDark} from 'react-syntax-highlighter/dist/esm/styles/prism';
+import {coldarkCold} from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import {coldarkDark} from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 const SimpleCounter = () => {
 	const reactString = 'function App() {\n' +
