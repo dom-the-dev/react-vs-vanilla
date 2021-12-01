@@ -11,7 +11,7 @@ export default function Home() {
 				<div className="grid gap-4 grid-col-1 md:grid-cols-3">
 
 					<Link href="/simple-counter">
-						<a>
+						<a className={"no-underline transform transition hover:-translate-y-2"}>
 							<div className={"shadow"}>
 								<Image
 									src={simpleCounter}
@@ -20,12 +20,7 @@ export default function Home() {
 								/>
 
 								<div className="p-5">
-									<h5 className={"text-center"}>Simple Counter</h5>
-								</div>
-
-								<div className="actions">
-									<a href="https://codepen.io/dom-the-dev/pen/jOLJPja">codepen vanilla</a>
-									<a href="https://codepen.io/dom-the-dev/pen/oNeVzeG">codepen react</a>
+									<h5 className={"text-xl text-center"}>Simple Counter</h5>
 								</div>
 							</div>
 						</a>

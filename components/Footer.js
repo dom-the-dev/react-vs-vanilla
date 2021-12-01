@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Footer = props => {
 	return (
 		<div className={"text-center"}>
-			By <a href="https://dom-the-dev.vercel.app/" target={"_blank"} rel={"noreferrer"}>
+			By <a href="https://www.domthedev.com" target={"_blank"} rel={"noreferrer"} className={"no-underline"}>
 			<span className={`font-bold`}>dom</span> <span  style={{color: '#00FFD1'}}>the dev</span>
 		</a>
 		</div>
