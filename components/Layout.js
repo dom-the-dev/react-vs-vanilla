@@ -17,15 +17,16 @@ const Layout = ({children, title, home}) => {
 				<header className="container text-center text-white">
 					{home ?
 						<div className={"transform -rotate-3"}>
-							<h1 className={"text-7xl text-primary uppercase filter drop-shadow-xl"}><span
-								className={"font-bold"}>React</span> <span className={"text-6xl"}>VS</span> <span
-								className={"font-bold"}>Vanilla JS</span></h1>
+							<h1 className={"break-words text-7xl text-primary uppercase filter drop-shadow-xl"}><span
+								className={"break-words font-bold"}>React</span> <span className={"break-words text-6xl"}>VS</span> <span
+								className={"break-words font-bold"}>Vanilla JS</span>
+							</h1>
 							<p className={"text-xl py-2 filter drop-shadow-xl"}>One application, two ways to build. One
 								with react and one with pure vanilla js.</p>
 						</div>
 						:
-						<h1 className={"text-7xl text-primary uppercase filter drop-shadow-xl"}><span
-							className={"font-bold"}>{title}</span></h1>
+						<h1 className={"break-words text-7xl text-primary uppercase filter drop-shadow-xl"}><span
+							className={"break-words font-bold"}>{title}</span></h1>
 					}
 				</header>
 			</div>

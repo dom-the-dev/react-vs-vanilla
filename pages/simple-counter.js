@@ -70,15 +70,15 @@ reset.addEventListener('click', function(e) {
 	const vanillaLinks = [
 		{
 			link: "https://codepen.io/dom-the-dev/pen/jOLJPja",
-			platform: "codepen"
+			platform: "CodePen"
 		},
 		{
 			link: "https://github.com/dom-the-dev/vanilla-js-counter",
-			platform: "github",
+			platform: "GitHub",
 		},
 		{
 			link: "https://dom-the-dev.github.io/vanilla-js-counter/",
-			platform: "demo"
+			platform: "Demo"
 		},
 	]
 
@@ -126,15 +126,15 @@ function reset() {
 	const reactLinks = [
 		{
 			link: "https://codepen.io/dom-the-dev/pen/oNeVzeG",
-			platform: "codepen"
+			platform: "CodePen"
 		},
 		{
 			link: "https://github.com/dom-the-dev/simple-counter-react",
-			platform: "github",
+			platform: "GitHub",
 		},
 		{
 			link: "https://dom-the-dev.github.io/simple-counter-react/",
-			platform: "demo"
+			platform: "Demo"
 		},]
 
 	return (
@@ -178,13 +178,30 @@ function reset() {
 					</ul>
 				</p>
 
+
+				<h3>
+					Examples
+				</h3>
+
+
+				<div className={"flex"}>
+					<div className="w-1/2">
+						<LinkBar links={vanillaLinks} react={true}/>
+					</div>
+					<div className="w-1/2">
+						<LinkBar links={reactLinks} react={false}/>
+
+					</div>
+				</div>
+
+				<h3>How To</h3>
+
 				<p>
 					Let&apos;s start with the so called <i>hard way</i> and lets build our app the vanilla way of life.
 					If you aren&apos;t interested in this part, feel free to skip right into the react part.
 				</p>
 
 				<Accordion title={"Vanilla"} type={"vanilla"}>
-					<LinkBar links={vanillaLinks}/>
 
 					<p>Let&apos;s start with the HTML. We need a span where the current number will be displayed, and
 						three buttons which will affect the number.</p>
@@ -229,7 +246,6 @@ function reset() {
 				</Accordion>
 
 				<Accordion title={"React"} type={"react"}>
-					<LinkBar links={reactLinks}/>
 
 					<p>In this part we are going to build the same application in use of react.
 						For this project you will not need deep knowledge of react but if you are absolutely new to
@@ -276,8 +292,13 @@ function reset() {
 
 					<CodeHighlighter code={react5}/>
 
-					<p>If you are here and still reading, i want to thank you. Please let me know what you did or did not like about this post.</p>
 				</Accordion>
+
+
+				<p>If you are here still reading, i want to thank you. Please let me know what you did or did
+					not like about this post. Hit me up on <a href="https://twitter.com/Dom_TheDev"
+															  title={"twitter"}>Twitter</a> or send an email to
+					hi@domthedev.com</p>
 
 
 			</ContentLayout>
