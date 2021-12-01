@@ -12,8 +12,7 @@ export default function Home() {
 
 					<Link href="/simple-counter">
 						<a>
-							<div
-								className={"shadow"}>
+							<div className={"shadow"}>
 								<Image
 									src={simpleCounter}
 									alt="Simple Counter Screenshot"
@@ -22,6 +21,11 @@ export default function Home() {
 
 								<div className="p-5">
 									<h5 className={"text-center"}>Simple Counter</h5>
+								</div>
+
+								<div className="actions">
+									<a href="https://codepen.io/dom-the-dev/pen/jOLJPja">codepen vanilla</a>
+									<a href="https://codepen.io/dom-the-dev/pen/oNeVzeG">codepen react</a>
 								</div>
 							</div>
 						</a>

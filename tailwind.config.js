@@ -18,6 +18,7 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       red: colors.red,
+      gray: colors.gray,
       blue: colors.blue,
       react: '#61DAFB',
       vanilla: '#F0DB4F',

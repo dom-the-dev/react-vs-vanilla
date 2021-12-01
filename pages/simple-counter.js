@@ -1,8 +1,9 @@
 import React from 'react';
 import Layout from "../components/Layout";
-import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
-import {coldarkCold} from 'react-syntax-highlighter/dist/cjs/styles/prism';
-import {coldarkDark} from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import CodeHighlighter from "../components/CodeHighlighter";
+import Accordion from "../components/Accordion";
+import ContentLayout from "../components/ContentLayout";
+import LinkBar from "../components/LinkBar";
 
 const SimpleCounter = () => {
 	const reactString = 'function App() {\n' +
@@ -60,22 +61,91 @@ const SimpleCounter = () => {
 		'\tcounter.innerText = number\n' +
 		'})'
 
+	const vanillaLinks = [
+		{
+			codepen: "",
+		},
+		{
+			github: "",
+		},
+		{
+			demo: "",
+		},
+	]
+
+	const reactLinks = [
+		{
+			codepen: "",
+		},
+		{
+			github: "",
+		},
+		{
+			demo: "",
+		},
+	]
+
 	return (
-		<Layout title={"Simple Counter"}>
-			<div className={"flex flex-col md:flex-row"}>
-				<div className={"container react"}>
-					<h1>React</h1>
-					<SyntaxHighlighter showLineNumbers={true} language="javascript" style={coldarkDark}>
-						{reactString}
-					</SyntaxHighlighter>
-				</div>
-				<div className={"container react"}>
-					<h1>Vanilla</h1>
-					<SyntaxHighlighter language="javascript" style={coldarkCold}>
-						{vanillaString}
-					</SyntaxHighlighter>
-				</div>
-			</div>
+		<Layout title={"Counter App built with React vs. pure Javascript"}>
+			<ContentLayout>
+
+				<h3>
+					React-VS-Vanilla Series
+				</h3>
+
+				<p>
+					Hi everyone and welcome to the first episode of the <b>React VS. Vanilla JS</b> series, where we are going
+					to build different applications in two ways.
+				</p>
+				<p>
+					As the title already suggests, we will use <a href="http://vanilla-js.com/" title={"vanilla js"}>vanilla
+					javascript</a> on the one hand and the javascript
+					framework <a href="https://reactjs.org/" title={"react"}>react</a> on the other.
+				</p>
+				<p>
+					<i>For those who are new to javascript, <b>vanilla js</b> means not more than using pure javascript without any framework or library.</i>
+				</p>
+
+				<h3>
+					The Counter App
+				</h3>
+
+				<p>
+					For this very <b>first project</b>, i wanted to keep things simple. So what we are going to build is
+					a classic counter app. The app will display a big number which is our counter.
+					</p>
+
+				<p>
+					We are going to have three buttons which can affect the state of our counter as followed:
+
+					<ul>
+						<li>Increase</li>
+						<li>Decrease</li>
+						<li>Reset</li>
+					</ul>
+				</p>
+
+				<p>
+					Let&apos;s start with the so called <i>hard way</i> and lets build our app the vanilla way of life.
+					If you aren&apos;t interested in this part, feel free to skip right into the react part.
+				</p>
+
+				<Accordion title={"Vanilla"}>
+					<LinkBar links={vanillaLinks}/>
+
+
+					<CodeHighlighter code={vanillaString}/>
+
+
+
+				</Accordion>
+
+				<Accordion title={"React"} react={true}>
+					<LinkBar links={reactLinks}/>
+					<CodeHighlighter code={reactString}/>
+				</Accordion>
+
+			</ContentLayout>
 		</Layout>
 	);
 };

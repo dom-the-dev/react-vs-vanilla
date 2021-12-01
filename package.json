@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "autoprefixer": "^10.4.0",
     "next": "12.0.4",
     "postcss": "^8.4.4",
