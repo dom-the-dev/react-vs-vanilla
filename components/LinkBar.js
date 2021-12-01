@@ -28,7 +28,7 @@ const LinkBar = ({links, react}) => {
 	}
 
 	return (
-		<div className={"flex flex-col md:flex-row justify-around my-2"}>
+		<div className={"flex flex-col md:flex-row justify-center my-2"}>
 			{renderLinks()}
 		</div>
 	);

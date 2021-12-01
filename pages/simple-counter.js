@@ -184,14 +184,9 @@ function reset() {
 				</h3>
 
 
-				<div className={"flex"}>
-					<div className="w-1/2">
+				<div className={"flex flex-col justify-center"}>
 						<LinkBar links={vanillaLinks} react={true}/>
-					</div>
-					<div className="w-1/2">
 						<LinkBar links={reactLinks} react={false}/>
-
-					</div>
 				</div>
 
 				<h3>How To</h3>
