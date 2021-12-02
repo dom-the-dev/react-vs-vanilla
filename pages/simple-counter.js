@@ -142,64 +142,72 @@ function reset() {
         <Layout title={"Simple Counter"} headline={"Counter App React vs. pure Javascript"}>
             <ContentLayout>
 
-                <h3>
-                    React-VS-Vanilla Series
-                </h3>
-
-                <p>
-                    Hi everyone and welcome to the first episode of the <b>React VS. Vanilla JS</b> series, where we are
-                    going to build different applications in two ways.
-                </p>
-                <p>
-                    As the title already suggests, we will use vanilla
-                    javascript on the one hand and the javascript
-                    framework <a href="https://reactjs.org/" title={"react"}>react</a> on the other.
-                </p>
-                <p>
-                    <i>For those who are new to javascript, <b>vanilla js</b> means not more than using pure javascript
-                        without any framework or library.</i>
-                </p>
-
-                <h3>
-                    The Counter App
-                </h3>
-
-                <p>
-                    For this very <b>first project</b>, i wanted to keep things simple. So what we are going to build is
-                    a classic counter app. The app will display a big number which is our counter.
-                </p>
-
-                <p>
-                    We are going to have three buttons which can affect the state of our counter as followed:
-
-                    <ul>
-                        <li>Increase</li>
-                        <li>Decrease</li>
-                        <li>Reset</li>
-                    </ul>
-                </p>
-
-
-                <h3>
-                    Examples
-                </h3>
-
-
                 <div>
-                    <div className={"flex flex-col justify-center"}>
-                        <h4 className={"text-center"}>Vanilla</h4>
-                        <LinkBar links={vanillaLinks} react={false}/>
-                        <h4 className={"text-center"}>React</h4>
-                        <LinkBar links={reactLinks} react={true}/>
+                    <h3>
+                        React-VS-Vanilla Series
+                    </h3>
+
+                    <p>
+                        Hi everyone and welcome to the first episode of the <b>React VS. Vanilla JS</b> series, where we
+                        are
+                        going to build different applications in two ways.
+                    </p>
+                    <p>
+                        As the title already suggests, we will use vanilla
+                        javascript on the one hand and the javascript
+                        framework <a href="https://reactjs.org/" title={"react"}>react</a> on the other.
+                    </p>
+                    <p>
+                        <i>For those who are new to javascript, <b>vanilla js</b> means not more than using pure
+                            javascript
+                            without any framework or library.</i>
+                    </p>
+
+                    <h3>
+                        The Counter App
+                    </h3>
+
+                    <p>
+                        For this very <b>first project</b>, i wanted to keep things simple. So what we are going to
+                        build is
+                        a classic counter app. The app will display a big number which is our counter.
+                    </p>
+
+                    <p>
+                        We are going to have three buttons which can affect the state of our counter as followed:
+
+                        <ul>
+                            <li>Increase</li>
+                            <li>Decrease</li>
+                            <li>Reset</li>
+                        </ul>
+                    </p>
+
+
+                    <h3>
+                        Examples
+                    </h3>
+
+
+                    <div>
+                        <div className={"flex flex-col justify-center"}>
+                            <h4 className={"text-center"}>Vanilla</h4>
+                            <LinkBar links={vanillaLinks} react={false}/>
+                            <h4 className={"text-center"}>React</h4>
+                            <LinkBar links={reactLinks} react={true}/>
+                        </div>
                     </div>
+
+
+                    <h3>How To</h3>
+
+                    <p>
+                        Let&apos;s start with the so called <i>hard way</i> and lets build our app the vanilla way of
+                        life.
+                        If you aren&apos;t interested in this part, feel free to skip right into the react part.
+                    </p>
+
                 </div>
-
-                <h3>How To</h3>
-
-                <p>
-                    Let&apos;s start with the so called <i>hard way</i> and lets build our app the vanilla way of life.
-                    If you aren&apos;t interested in this part, feel free to skip right into the react part.
-                </p>
 
                 <Accordion title={"Vanilla"} type={"vanilla"}>
 
@@ -294,11 +302,12 @@ function reset() {
 
                 </Accordion>
 
-
-                <p>If you are here still reading, i want to thank you. Please let me know what you did or did
-                    not like about this post. Hit me up on <a href="https://twitter.com/Dom_TheDev"
-                                                              title={"twitter"}>Twitter</a> or send an email to
-                    hi@domthedev.com</p>
+                <div>
+                    <p>If you are here still reading, i want to thank you. Please let me know what you did or did
+                        not like about this post. Hit me up on <a href="https://twitter.com/Dom_TheDev"
+                                                                  title={"twitter"}>Twitter</a> or send an email to
+                        hi@domthedev.com</p>
+                </div>
 
 
             </ContentLayout>
