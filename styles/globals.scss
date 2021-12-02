@@ -40,9 +40,18 @@
   }
 
   h4 {
+    @apply text-xl;
     @apply uppercase;
     @apply font-bold;
   }
+}
+
+.shadow-animation {
+  @apply shadow-lg hover:shadow-md transform transition duration-200 hover:translate-y-1;
+}
+
+pre {
+  @apply rounded-lg
 }
 
 p {
@@ -52,6 +61,7 @@ p {
 body {
   font-family: Montserrat, serif;
   box-sizing: border-box;
+  background-color: #fafafa;
 }
 
 
@@ -71,3 +81,4 @@ ul {
 li {
   list-style-type: circle;
 }
+

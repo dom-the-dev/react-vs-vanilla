@@ -1,30 +1,21 @@
-import Link from 'next/link'
 import Layout from "../components/Layout";
-import Image from 'next/image'
 import simpleCounter from '../public/simpleCounter.png'
+import ProjectCard from "../components/ProjectCard";
 
 
 export default function Home() {
 	return (
-		<Layout title={"Home"} home={true}>
-			<main className={"container my-16 min-h-screen"}>
+		<Layout title={"Home"} headline={"React VS Vanilla"} home={true}>
+			<main className={"container my-16 min-h-screen px-2"}>
+				<div className={"text-center my-5"}>
+				<h2>Projects</h2>
+				</div>
 				<div className="grid gap-4 grid-col-1 md:grid-cols-3">
-
-					<Link href="/simple-counter">
-						<a className={"no-underline transform transition hover:-translate-y-2"}>
-							<div className={"shadow"}>
-								<Image
-									src={simpleCounter}
-									alt="Simple Counter Screenshot"
-									placeholder="blur"
-								/>
-
-								<div className="p-5">
-									<h5 className={"text-xl text-center"}>Simple Counter</h5>
-								</div>
-							</div>
-						</a>
-					</Link>
+					<ProjectCard
+						thumbnail={simpleCounter}
+						title={"Simple Counter"}
+						link={"/simple-counter"}
+					/>
 				</div>
 			</main>
 
