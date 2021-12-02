@@ -8,7 +8,7 @@ const ProjectCard = ({thumbnail, title, link}) => {
     return (
         <Link href={link}>
             <a className={"no-underline"}>
-                <div className={"shadow-animation rounded-lg overflow-hidden"}>
+                <div className={"shadow-animation rounded overflow-hidden"}>
                     <Image
                         src={thumbnail}
                         alt={title}

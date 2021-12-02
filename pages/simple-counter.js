@@ -202,9 +202,7 @@ function reset() {
                     <h3>How To</h3>
 
                     <p>
-                        Let&apos;s start with the so called <i>hard way</i> and lets build our app the vanilla way of
-                        life.
-                        If you aren&apos;t interested in this part, feel free to skip right into the react part.
+                        If you are only into react feel free to skip the first part and jump directly into react.
                     </p>
 
                 </div>

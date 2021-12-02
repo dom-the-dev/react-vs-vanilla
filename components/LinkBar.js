@@ -21,7 +21,7 @@ const LinkBar = ({links, react}) => {
 
 	const renderLinks = () => {
 		return links.map((link, index) => (
-			<a key={link.platform + index} href={`${link.link}`} target={"_blank"} rel={"noreferrer"} className={`shadow-animation rounded-lg no-underline flex justify-center align-middle text-center block m-2 p-4 ${classes}`}>
+			<a key={link.platform + index} href={`${link.link}`} target={"_blank"} rel={"noreferrer"} className={`shadow-animation rounded no-underline flex justify-center align-middle text-center block m-2 p-4 ${classes}`}>
 				<span>{link.platform}</span> <div className={"p-1 ml-2"}>{renderIcon(link.platform)}</div>
 			</a>
 		))

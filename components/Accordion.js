@@ -8,7 +8,7 @@ const Accordion = ({title, children, type}) => {
         <div className={`tab`}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`shadow-animation rounded-lg font-bold py-3 mt-4 block w-full  border-gray-600 ${type === "react" ? 'bg-react' : 'bg-vanilla'}`}>
+                className={`shadow-animation rounded font-bold py-3 mt-4 block w-full  border-gray-600 ${type === "react" ? 'bg-react' : 'bg-vanilla'}`}>
                 {title}
             </button>
 
