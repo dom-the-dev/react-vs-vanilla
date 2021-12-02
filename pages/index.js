@@ -5,7 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
 	return (
-		<Layout title={"Home"} headline={"React VS Vanilla"} home={true}>
+		<Layout title={"Home"} headline={"React VS Vanilla"} home={true} card={"react-vs-vanilla"}>
 			<main className={"container my-16 min-h-screen px-2"}>
 				<div className={"text-center my-5"}>
 				<h2>Projects</h2>

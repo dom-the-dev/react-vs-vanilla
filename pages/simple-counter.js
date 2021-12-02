@@ -139,7 +139,7 @@ function reset() {
         },]
 
     return (
-        <Layout title={"Simple Counter"} headline={"Counter App React vs. pure Javascript"}>
+        <Layout title={"Simple Counter"} headline={"Counter App -  React vs. pure Javascript"} card={"counter-app"}>
             <ContentLayout>
 
                 <div>
